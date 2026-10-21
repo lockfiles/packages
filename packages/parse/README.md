@@ -13,12 +13,12 @@ npm i @lockfiles/parse
 ### Usage
 
 ```ts
-import { parseLockfile } from "@lockfiles/parse";
+import { parseLockfile } from '@lockfiles/parse';
 
 // From a path
-const lockfile = await parseLockfile("./package-lock.json");
+const lockfile = await parseLockfile('./package-lock.json');
 
-const entry = lockfile.get("react", "19.0.0");
+const entry = lockfile.get('react', '19.0.0');
 console.log(entry?.integrity, entry?.dependencies);
 ```
 
@@ -41,7 +41,7 @@ console.log(entry?.integrity, entry?.dependencies);
 Results in a parsed lockfile. `input` is either the path to a lockfile or the content of one.
 
 ```ts
-const lockfile = await parseLockfile("./package-lock.json");
+const lockfile = await parseLockfile('./package-lock.json');
 ```
 
 #### `parseLockfileSync(input: string): Lockfile`
@@ -112,10 +112,10 @@ The result of `parseLockfile`.
 | `toJSON()`                      | `LockfileJSON`             | Plain data in JSON format                                 |
 
 ```ts
-const lockfile = await parseLockfile("./package-lock.json");
+const lockfile = await parseLockfile('./package-lock.json');
 
-for (const chain of lockfile.why("js-tokens", "4.0.0")) {
-  console.log(chain.map((entry) => entry.name).join(" > "));
+for (const chain of lockfile.why('js-tokens', '4.0.0')) {
+  console.log(chain.map((entry) => entry.name).join(' > '));
 }
 // react > loose-envify > js-tokens
 // react-dom > loose-envify > js-tokens
