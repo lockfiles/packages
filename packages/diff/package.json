@@ -1,6 +1,6 @@
 {
   "name": "@lockfiles/diff",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Compare two lockfiles of any package manager and see what was added, removed or updated.",
   "keywords": [
     "bun.lock",

@@ -1,6 +1,6 @@
 {
   "name": "@lockfiles/enrich",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fill in what a lockfile does not store, like dev and optional flags, licenses and integrity hashes. Works with the lockfiles of npm, pnpm, yarn and bun.",
   "keywords": [
     "bun.lock",

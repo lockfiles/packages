@@ -1,6 +1,6 @@
 {
   "name": "@lockfiles/parse",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A typescript lockfile parser. Parse lockfiles of any package manager (npm, pnpm, yarn, bun).",
   "keywords": [
     "bun.lock",
