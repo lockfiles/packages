@@ -1,0 +1,12 @@
+{
+  "name": "@fixture/app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@fixture/lib": "workspace:*",
+    "react": "18.3.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.3.3"
+  }
+}

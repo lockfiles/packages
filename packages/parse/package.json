@@ -1,0 +1,49 @@
+{
+  "name": "@lockfiles/parse",
+  "version": "0.0.0",
+  "description": "A typescript lockfile parser. Parse lockfiles of any package manager (npm, pnpm, yarn, bun).",
+  "keywords": [
+    "bun.lock",
+    "lockfile",
+    "package-lock",
+    "parser",
+    "pnpm-lock",
+    "yarn.lock"
+  ],
+  "homepage": "https://github.com/lockfiles/packages#readme",
+  "bugs": {
+    "url": "https://github.com/lockfiles/packages/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockfiles/packages.git",
+    "directory": "packages/parse"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "yaml": "^2.9.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

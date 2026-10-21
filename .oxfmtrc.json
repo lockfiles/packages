@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "useTabs": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "ignorePatterns": ["**/dist", "**/test/fixtures", "**/CHANGELOG.md", "pnpm-lock.yaml"]
+}

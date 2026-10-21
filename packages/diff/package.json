@@ -1,0 +1,49 @@
+{
+  "name": "@lockfiles/diff",
+  "version": "0.0.0",
+  "description": "Compare two lockfiles of any package manager and see what was added, removed or updated.",
+  "keywords": [
+    "bun.lock",
+    "diff",
+    "lockfile",
+    "package-lock",
+    "pnpm-lock",
+    "yarn.lock"
+  ],
+  "homepage": "https://github.com/lockfiles/packages/tree/main/packages/diff#readme",
+  "bugs": {
+    "url": "https://github.com/lockfiles/packages/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockfiles/packages.git",
+    "directory": "packages/diff"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@lockfiles/parse": "workspace:^"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
