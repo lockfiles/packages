@@ -54,7 +54,7 @@ export interface Importer {
   name?: string;
   /** Package version from the `package.json`, if the lockfile has it. */
   version?: string;
-  /** Keys (`name@version`) of the dependencies. Yarn does not keep dev dependencies apart, so they are also here. */
+  /** Keys (`name@version`) of the dependencies. Yarn doesn't keep dev dependencies apart, so they are also here. */
   dependencies: Set<string>;
   /** Keys of the dev dependencies. */
   devDependencies: Set<string>;
@@ -201,7 +201,7 @@ export class Lockfile {
    *
    * @param name The name of the package.
    * @param version The version of the package.
-   * @returns The lock entry for the specified package name and version, or `undefined` if it does not exist.
+   * @returns The lock entry for the specified package name and version, or `undefined` if it doesn't exist.
    */
   get(name: string, version: string): LockEntry | undefined {
     return this.entries.get(keyOf(name, version));

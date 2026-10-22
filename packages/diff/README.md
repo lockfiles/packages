@@ -76,12 +76,12 @@ Each entry of `changed` has:
 | `direction` | `upgrade` or `downgrade`. Only set if there is one version on each side and both are semver |
 | `bump`      | `major`, `minor`, `patch` or `prerelease`. Set together with `direction`                    |
 
-## Good to know
+## Notes
 
 - Packages are matched by **name**. A package that exists in several versions can be listed in `added`, `removed` and `changed` at the same time.
 - **Workspace packages are ignored.** They belong to your project and are not dependencies.
 - A different **integrity hash** for the same version should never happen. It can mean that a package was changed after it was published, so it is reported on its own. Yarn berry lockfiles have no integrity hash, so nothing is compared for them.
-- Lockfiles of different package managers may look different even if they install the same packages. For example, yarn does not store which packages are dev dependencies.
+- Lockfiles of different package managers may look different even if they install the same packages. For example, yarn doesn't store which packages are dev dependencies.
 
 ## License
 

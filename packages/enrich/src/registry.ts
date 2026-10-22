@@ -24,7 +24,7 @@ export function resolveRegistryOptions(
   };
 }
 
-/** Gets the manifest of one version of a package. Returns `undefined` if the registry does not know it. */
+/** Gets the manifest of one version of a package. Returns `undefined` if the registry doesn't know it. */
 export async function fetchManifest(
   name: string,
   version: string,

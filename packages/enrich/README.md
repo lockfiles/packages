@@ -35,7 +35,7 @@ console.log(lockfile.getAll({ dev: false, optional: false }));
 | `node_modules` | `nodeModules` | Reads license, engines, `bin`, `os`, `cpu`, `libc` and install scripts from installed packages. It finds packages in `node_modules` and in the pnpm store (`.pnpm`). | on      |
 | `registry`     | `registry`    | Asks the npm registry for what is still missing, including `integrity`, `resolved` and `deprecated`, which only the registry knows.                                  | off     |
 
-All steps only fill what the package manager does not store, so they do not touch properties that the lockfile already has.
+All steps only fill what the package manager doesn't store, so they do not touch properties that the lockfile already has.
 
 | Package manager | What can be filled                                                                                    |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ await enrich(lockfile, {
 });
 ```
 
-#### The report
+#### `EnrichReport`
 
 `enrich` returns a report of what it did:
 

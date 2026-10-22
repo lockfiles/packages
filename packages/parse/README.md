@@ -130,7 +130,7 @@ for (const chain of lockfile.why('js-tokens', '4.0.0')) {
 const production = lockfile.getAll({ dev: false, optional: false });
 ```
 
-Yarn does not store these types, so `getAll` treats all yarn packages as `prod`.
+Yarn doesn't store these types, so `getAll` treats all yarn packages as `prod`.
 
 `traverse` starts at the dependencies of the importers. Use `dev: false` to skip dev dependencies and `optional: false` to skip optional ones. Use `from` to start at other packages.
 

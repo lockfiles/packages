@@ -10,14 +10,14 @@
     "pnpm-lock",
     "yarn.lock"
   ],
-  "homepage": "https://github.com/lockfiles/packages#readme",
+  "homepage": "https://github.com/lockfiles/tools#readme",
   "bugs": {
-    "url": "https://github.com/lockfiles/packages/issues"
+    "url": "https://github.com/lockfiles/tools/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lockfiles/packages.git",
+    "url": "git+https://github.com/lockfiles/tools.git",
     "directory": "packages/parse"
   },
   "files": [

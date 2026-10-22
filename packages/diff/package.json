@@ -1,7 +1,7 @@
 {
   "name": "@lockfiles/diff",
   "version": "0.1.0",
-  "description": "Compare two lockfiles of any package manager and see what was added, removed or updated.",
+  "description": "Diff lockfiles of any package manager.",
   "keywords": [
     "bun.lock",
     "diff",
@@ -10,14 +10,14 @@
     "pnpm-lock",
     "yarn.lock"
   ],
-  "homepage": "https://github.com/lockfiles/packages/tree/main/packages/diff#readme",
+  "homepage": "https://github.com/lockfiles/tools/tree/main/packages/diff#readme",
   "bugs": {
-    "url": "https://github.com/lockfiles/packages/issues"
+    "url": "https://github.com/lockfiles/tools/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lockfiles/packages.git",
+    "url": "git+https://github.com/lockfiles/tools.git",
     "directory": "packages/diff"
   },
   "files": [

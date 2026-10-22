@@ -13,7 +13,7 @@ Commit the new file in `.changeset/` with your pull request. When it is merged, 
 Choose the size of the change like this:
 
 - **patch**: a bug fix or an internal change that users do not notice
-- **minor**: a new feature that does not break anything
+- **minor**: a new feature that doesn't break anything
 - **major**: a change that breaks existing code
 
 More about changesets: https://github.com/changesets/changesets

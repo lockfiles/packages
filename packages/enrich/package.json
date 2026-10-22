@@ -1,7 +1,7 @@
 {
   "name": "@lockfiles/enrich",
   "version": "0.1.0",
-  "description": "Fill in what a lockfile does not store, like dev and optional flags, licenses and integrity hashes. Works with the lockfiles of npm, pnpm, yarn and bun.",
+  "description": "Enrich lockfiles with additional information to meet npm's standard.",
   "keywords": [
     "bun.lock",
     "enrich",
@@ -11,14 +11,14 @@
     "pnpm-lock",
     "yarn.lock"
   ],
-  "homepage": "https://github.com/lockfiles/packages/tree/main/packages/enrich#readme",
+  "homepage": "https://github.com/lockfiles/tools/tree/main/packages/enrich#readme",
   "bugs": {
-    "url": "https://github.com/lockfiles/packages/issues"
+    "url": "https://github.com/lockfiles/tools/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lockfiles/packages.git",
+    "url": "git+https://github.com/lockfiles/tools.git",
     "directory": "packages/enrich"
   },
   "files": [

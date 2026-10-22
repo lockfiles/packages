@@ -25,7 +25,7 @@ export async function pool<T>(
 export const isRecord = (value: unknown): value is Record<string, unknown> =>
   typeof value === 'object' && value !== null && !Array.isArray(value);
 
-/** Adds the cause to the message, because `fetch failed` alone does not say why it failed. */
+/** Adds the cause to the message, because `fetch failed` alone doesn't say why it failed. */
 export function describeError(error: unknown): string {
   if (!(error instanceof Error)) return String(error);
   const { cause } = error;

@@ -24,6 +24,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
       - uses: changesets/action@v1
+        id: changesets
         with:
           version: pnpm version-packages
           publish: pnpm release
@@ -31,3 +32,16 @@ jobs:
           commit: 'chore: version packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create GitHub releases
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for dir in packages/*/; do
+            name=$(node -p "require('./${dir}package.json').name")
+            version=$(node -p "require('./${dir}package.json').version")
+            tag="${name}@${version}"
+            if gh release view "$tag" >/dev/null 2>&1; then continue; fi
+            awk -v v="## ${version}" '$0 == v {f=1; next} /^## / {f=0} f' "${dir}CHANGELOG.md" > notes.md
+            gh release create "$tag" --target "$GITHUB_SHA" --title "$tag" --notes-file notes.md
+          done

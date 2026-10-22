@@ -1,6 +1,6 @@
-# lockfiles
+# `@lockfiles/tools`
 
-Small and efficient TypeScript tools for working with the **lockfiles of any JavaScript package manager**.
+> Small and efficient set of typescript tools for working with **lockfiles of any javascript package manager**.
 
 ## Packages
 
@@ -8,7 +8,7 @@ Small and efficient TypeScript tools for working with the **lockfiles of any Jav
 | -------------------------------------- | --------------------------------------------------------------------------------------- |
 | [`@lockfiles/parse`](packages/parse)   | Parses a lockfile and gives you the same data, no matter which package manager wrote it |
 | [`@lockfiles/diff`](packages/diff)     | Diff lockfiles of any package manager                                                   |
-| [`@lockfiles/enrich`](packages/enrich) | Fills in what a lockfile does not store, like dev and optional flags and licenses       |
+| [`@lockfiles/enrich`](packages/enrich) | Fills in what a lockfile doesn't store, like dev and optional flags and licenses        |
 
 ## Development
 

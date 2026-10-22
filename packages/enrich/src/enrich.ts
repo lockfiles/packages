@@ -21,7 +21,7 @@ const METADATA: readonly EnrichedField[] = [
 /** Fields that only the registry knows. */
 const REGISTRY_ONLY: readonly EnrichedField[] = ['integrity', 'resolved', 'deprecated'];
 
-/** What each lockfile format does not store, see the table in the README of `@lockfiles/parse`. */
+/** What each lockfile format doesn't store, see the table in the README of `@lockfiles/parse`. */
 function wantedFields(lockfile: Lockfile): Set<EnrichedField> {
   switch (lockfile.kind) {
     case 'npm':
@@ -43,7 +43,7 @@ const isMissing = (entry: LockEntry, field: EnrichedField): boolean =>
   (entry as unknown as Record<string, unknown>)[field] === undefined;
 
 /**
- * Fills in what the lockfile does not store. The lockfile is changed in place, and values that it already has are never replaced.
+ * Fills in what the lockfile doesn't store. The lockfile is changed in place, and values that it already has are never replaced.
  *
  * It works in three steps:
  * 1. `project`: finds out which packages are dev or optional from the `package.json` files (yarn only).
