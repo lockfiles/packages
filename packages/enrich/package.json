@@ -1,6 +1,6 @@
 {
   "name": "@lockfiles/enrich",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enrich lockfiles with additional information to meet npm's standard.",
   "keywords": [
     "bun.lock",
