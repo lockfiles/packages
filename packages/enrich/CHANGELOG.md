@@ -1,5 +1,13 @@
 # @lockfiles/enrich
 
+## 0.1.1
+
+### Patch Changes
+
+- [`4612a90`](https://github.com/lockfiles/tools/commit/4612a90128609c460881910ce5d594daf5872eac) Thanks [@philSixZero](https://github.com/philSixZero)! - Minor chores and changes in the release action.
+- Updated dependencies [[`4612a90`](https://github.com/lockfiles/tools/commit/4612a90128609c460881910ce5d594daf5872eac)]:
+  - @lockfiles/parse@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
