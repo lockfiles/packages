@@ -1,6 +1,6 @@
 # `@lockfiles/tools`
 
-> Small and efficient set of typescript tools for working with **lockfiles of any javascript package manager**.
+> A set of small and efficient typescript tools for working with **lockfiles of any javascript package manager**.
 
 ## Packages
 

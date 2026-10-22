@@ -1,6 +1,6 @@
 {
   "name": "@lockfiles/diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Diff lockfiles of any package manager.",
   "keywords": [
     "bun.lock",
